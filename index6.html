@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming and Development Learning Hub</title>
+    <!-- Add your custom styles or link to an external stylesheet here -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header img {
+            max-width: 100px; /* Adjust the size of the logo */
+            height: auto;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .course-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .course-list li {
+            margin-bottom: 20px;
+            cursor: pointer;
+            color: #007BFF;
+        }
+
+        .course-list li:hover {
+            text-decoration: underline;
+        }
+
+        .video-container {
+            display: none;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-image: url('path/to/background-image.jpg'); /* Replace with your background image */
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                color: #fff;
+                background-color: #3498db; /* Blue background color */
+                background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-technology-e-commerce-learning-education-business-poster-banner-image_123753.jpg'); /* Replace with your background image */
+            }
+    
+            header {
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                text-align: center;
+                padding: 1em 0;
+            }
+    
+            header img {
+                max-width: 100px;
+                height: auto;
+            }
+    
+            nav {
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                text-align: center;
+                padding: 1em 0;
+            }
+    
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+    
+            section {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+    
+            h1, h2 {
+                color: #333;
+            }
+    
+            p {
+                line-height: 1.6;
+                color: #555;
+            }
+    
+            .course-list {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            .course-list li {
+                margin-bottom: 20px;
+                cursor: pointer;
+                color: #007BFF;
+            }
+    
+            .course-list li:hover {
+                text-decoration: underline;
+            }
+    
+            .video-container {
+                display: none;
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                height: 0;
+                overflow: hidden;
+            }
+    
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+    
+            .cta-button {
+                display: inline-block;
+                padding: 10px 20px;
+                margin-top: 20px;
+                background-color: #4CAF50;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+                cursor: pointer;
+            }
+    
+            .cta-button:hover {
+                background-color: #45a049;
+            }
+    
+           
+            #advanced-skills {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        #advanced-skills h2 {
+            color: #3498db; /* Blue color */
+        }
+
+        #advanced-skills p {
+            color: #555;
+        }
+
+        #advanced-skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #advanced-skills li {
+            color: #e74c3c; /* Red color */
+        }
+        #about {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        #about h2 {
+            color: #3498db; /* Blue color */
+        }
+
+        #about p {
+            color: #9b1313;
+        }
+        </style>
+    <script>
+        function playVideo(courseName, videoUrl) {
+            var videoContainer = document.getElementById(courseName + '-video');
+            videoContainer.innerHTML = '<iframe width="560" height="315" src="' + videoUrl + '" frameborder="0" allowfullscreen></iframe>';
+            videoContainer.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://images-platform.99static.com//-IB-flwbGWHCs6QSOKUKcCkY0pI=/249x106:749x606/fit-in/500x500/99designs-contests-attachments/97/97064/attachment_97064247" shape="Critical" alt="Logo">
+        <h1>Programming and Development Learning Hub</h1>
+        <p>Your comprehensive resource for mastering various programming and development skills</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Our Learning Hub!</h2>
+        <p>At Programming and Development Learning Hub, we are committed to empowering individuals with the knowledge and skills needed to succeed in the dynamic field of programming and development.</p>
+
+        <h3>What Should You Learn?</h3>
+        <p>Our learning hub offers a wide range of courses covering essential topics such as:</p>
+        <ul>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <!-- Add other courses as needed -->
+        </ul>
+
+        <h3>How Can It Help You?</h3>
+        <p>By enrolling in our courses, you can:</p>
+        <ul>
+            <li>Develop a strong foundation in programming and development.</li>
+            <li>Stay updated with the latest industry trends and technologies.</li>
+            <li>Enhance your problem-solving and critical thinking skills.</li>
+            <li>Participate in hands-on projects to apply your knowledge.</li>
+        </ul>
+
+        <p>Embark on a journey of continuous learning and unlock new opportunities in the tech industry.</p>
+    </section>
+    <section id="about">
+        <h2>About Our Courses</h2>
+        <p>Our courses are designed to empower you with the skills and knowledge needed to thrive in the fast-paced world of programming and development.</p>
+
+        <h3>When Do Courses Start?</h3>
+        <p>The next batch of courses is scheduled to start on <strong>January 15, 2024</strong>. Don't miss this opportunity to kickstart your learning journey!</p>
+
+        <h3>Benefits of Joining Our Courses</h3>
+        <p>By enrolling in our courses, you will:</p>
+        <ul>
+            <li>Gain a solid foundation in programming languages and development tools.</li>
+            <li>Learn from industry experts with hands-on, practical experience.</li>
+            <li>Participate in real-world projects to apply your skills in a professional setting.</li>
+            <li>Receive career guidance and support to enhance your job prospects in the tech industry.</li>
+            <li>Join a vibrant community of learners and professionals passionate about programming.</li>
+        </ul>
+        <p>Invest in your future success by choosing our courses. We are committed to providing you with an enriching and rewarding learning experience.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Featured Courses</h2>
+        <ul class="course-list">
+            <li onclick="playVideo('machine-learning', 'https://www.youtube.com/embed/example-machine-learning')">Machine Learning</li>
+            <li onclick="playVideo('deep-learning', 'https://www.youtube.com/embed/example-deep-learning')">Deep Learning</li>
+            <li onclick="playVideo('natural-language-processing', 'https://www.youtube.com/embed/example-nlp')">Natural Language Processing</li>
+            <li onclick="playVideo('computer-networks', 'https://www.youtube.com/embed/example-computer-networks')">Computer Networks</li>
+            <li onclick="playVideo('python-for-ai-ml', 'https://www.youtube.com/embed/example-python-ai-ml')">Python for AI & ML</li>
+            <li onclick="playVideo('c-programming', 'https://www.youtube.com/embed/example-c-programming')">C Programming</li>
+            <li onclick="playVideo('c-plus-plus', 'https://www.youtube.com/embed/example-c-plus-plus')">C++</li>
+            <li onclick="playVideo('web-development', 'https://www.youtube.com/embed/example-web-development')">Web Development</li>
+            <li onclick="playVideo('java', 'https://www.youtube.com/embed/example-java')">Java</li>
+            <li onclick="playVideo('javascript', 'https://www.youtube.com/embed/example-javascript')">JavaScript</li>
+            <li onclick="playVideo('data-structures', 'https://www.youtube.com/embed/example-data-structures')">Data Structures</li>
+            <li onclick="playVideo('dbms', 'https://www.youtube.com/embed/example-dbms')">DBMS</li>
+            <li onclick="playVideo('operating-system', 'https://www.youtube.com/embed/example-operating-system')">Operating System</li>
+            <li onclick="playVideo('artificial-intelligence', 'https://www.youtube.com/embed/example-artificial-intelligence')">Artificial Intelligence</li>
+            <li onclick="playVideo('sql', 'https://www.youtube.com/embed/example-sql')">SQL</li>
+            <li onclick="playVideo('computer-architecture', 'https://www.youtube.com/embed/example-computer-architecture')">Computer Architecture and Organization</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <!-- ... (unchanged) -->
+    </section>
+    <strong>
+    <h2>Advanced Learning Skills</h2>
+        <p>Our courses not only cover the fundamentals but also focus on advanced learning skills to help you excel in your programming journey. Here are some key aspects:</p>
+        <ul>
+            <li><strong>Problem-Solving:</strong> Develop strong problem-solving skills, a crucial aspect of any successful programmer.</li>
+            <li><strong>Critical Thinking:</strong> Enhance your critical thinking abilities to approach coding challenges with creativity and innovation.</li>
+            <li><strong>Project-Based Learning:</strong> Apply your knowledge through hands-on, real-world projects to reinforce your skills.</li>
+            <li><strong>Collaboration:</strong> Learn the importance of teamwork and collaboration by engaging in group projects and discussions.</li>
+            <li><strong>Continuous Learning:</strong> Stay updated with the latest industry trends and technologies through continuous learning and professional development.</li>
+        </strong>
+
+</body>
+</html>
